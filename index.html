@@ -13,13 +13,16 @@
     </header>
     <main>
         <h3>Total list</h3>
-        <li id="list">list</li>
-        <li>list</li>
-        <li>list</li>
+        <ul>
+            <li class="list">list1</li>
+            <li class="list">list2</li>
+            <li class="list">list3</li>
+        </ul>
     </main>
     <script>
-        const byID = document.getElementById('list').innerText
-        console.log(byID)
+        const lists = document.getElementsByClassName('list');
+        for(const list of lists)
+        console.log(list.innerHTML)
     </script>
     <script src="./js/index.js"></script>
 </body>
